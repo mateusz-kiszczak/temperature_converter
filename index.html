@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature converter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
-        <section>
+        <section id="content-container">
             <h1>Temperature converter</h1>
             <!-- Add "aria-disabled" attribute with adequate value to alert when JS runs -->
-            <div id="warning" role="alert" aria-relevant="all"> 
+            <div id="warning" class="inactive-alert" role="alert" aria-relevant="all">
                 <noscript>Your browser do not support JavaScript or it is disabled</noscript>
             </div>
             <form id="temp-conv-form">
-                <input type="number" name="temperature-value" min="-999" max="999" value="1" aria-label="Place temperature value" placeholder="Enter value from -999 to 999" aria-required="true">
+                <input class="valid-input" type="number" name="temperature-value" min="-999" max="999" value="1" aria-label="Place temperature value" placeholder="Enter -999 to 999" aria-required="true">
                 <select name="temperature-unit" aria-label="Choose temperature unit">
                     <option value="celsius" selected>&#176;C</option>
                     <option value="fahrenheit">&#176;F</option>
@@ -26,13 +27,13 @@
                 </select>
             </form>
             <div id="form-output" aria-live="assertive">
-                <p><span id="input-temp-val">1</span>&#176;<span id="input-temp-unit" >C</span>&#160;(<span id="input-temp-unit-in-words">Celius </span id="degree-plural-singular">degree</span>) is equal to:</p>
+                <p><b><span id="input-temp-val">1</span>&#176;<span id="input-temp-unit" >C</span></b>&#160;(<span id="input-temp-unit-in-words">Celius </span id="degree-plural-singular">degree</span>) is equal to:</p>
                 <ul id="output-list">
-                    <li>33.8&#176;F (Fahrenheit dagrees)</li>
-                    <li>274.15&#176;K (Kelvin dagrees)</li>
-                    <li>0.33&#176;N (Newton dagree)</li>
-                    <li>493.47&#176;Ra (Rankine dagrees)</li>
-                    <li>0.8&#176;Ré (Réaumur dagree)</li>
+                    <li><b><span class="left-part">33.8&#176;F</span></b><span class="right-part">(Fahrenheit dagrees)</span></li>
+                    <li><b><span class="left-part">274.15&#176;K</span></b><span class="right-part">(Kelvin dagrees)</span></li>
+                    <li><b><span class="left-part">0.33&#176;N</span></b><span class="right-part">(Newton dagree)</span></li>
+                    <li><b><span class="left-part">493.47&#176;Ra</span></b><span class="right-part">(Rankine dagrees)</span></li>
+                    <li><b><span class="left-part">0.8&#176;Ré</span></b><span class="right-part">(Réaumur dagree)</span></li>
                 </ul>
             </div>
         </section>

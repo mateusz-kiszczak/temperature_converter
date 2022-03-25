@@ -1,0 +1,209 @@
+/* GLOBAL STYLES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+
+/* TYPOGRAPHY */
+
+html {
+    font-family: Helvetice, Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+P,
+span,
+ul {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+input,
+select {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input {
+    line-height: normal;
+}
+
+@media only screen and (min-width: 520px) {
+    P,
+    span,
+    ul {
+        font-size: 1.375rem;
+    }
+
+    input,
+    select {
+        font-size: 1.75rem;
+    }
+}
+
+/* STRUCTURE */
+
+#content-container {
+    background-color: hsl(200, 90%, 95%);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px hsl(200, 100%, 5%);
+    min-width: 320px;
+    padding: 24px 12px;
+}
+
+@media only screen and (min-width: 520px) {
+    #content-container {
+        width: 488px;
+    }
+}
+
+
+/* MODULES */
+
+form {
+    height: 50px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    position: relative;
+    width: 100%;
+}
+
+input,
+select {
+    border: 2px solid hsl(200, 100%, 10%);
+    border-radius: 5px;
+}
+
+input {
+    height: inherit;
+    text-align: center;
+    width: 67%;
+}
+
+select {
+    cursor: pointer;
+    height: inherit;
+    padding-left: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+}
+
+.valid-input:active,
+.valid-input:focus, 
+select:active,
+select:focus {
+    background-color: hsl(135, 31%, 95%);
+    border: 3px solid hsl(135, 100%, 30%);
+    outline: none;
+}
+
+@media only screen and (min-width: 520px) {
+    input {
+        width: 74%;
+    }
+    
+    select {
+        padding-left: 1rem;
+        width: 24%;
+    }
+}
+
+/* COMPONENTS */
+
+
+
+/* PAGE */
+
+main {
+    background-color: hsl(200, 100%, 20%);
+    color: hsl(200, 100%, 10%);
+    padding: 48px 16px;
+}
+
+#warning {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    font-weight: bold;
+    margin-top: 32px;
+    min-height: 100px;
+    padding: 1rem;
+    width: 100%;
+}
+
+#form-output {
+    background-color: hsl(200, 100%, 30%);
+    border-radius: 5px;
+    margin-top: 32px;
+}
+
+#form-output > p {
+    color: hsl(200, 100%, 95%);
+    padding: 0.25rem 1rem;
+}
+
+ul {
+    background-color: hsl(200, 100%, 85%);
+    border-radius: 5px;
+    list-style: none;
+}
+
+li {
+    padding: 0.25rem 1rem;
+    width: 100%;
+}
+
+li:nth-of-type(odd) {
+    background-color: hsl(200, 100%, 75%);
+}
+
+li:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.left-part {
+    display: inline-block;
+    width: 115px;
+}
+
+@media only screen and (min-width: 520px) {
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-part {
+        width: 130px;
+    }
+}
+
+
+/* HELPERS */
+
+.active-alert {
+    background-color: hsl(355, 90%, 85%);
+    border: 2px solid hsl(355, 90%, 40%);
+}
+
+.inactive-alert {
+    border: 1px solid hsl(200, 90%, 80%);
+    user-select: none;
+}
+
+.invalid-input {
+    background-color: hsl(355, 31%, 95%);
+    border: 3px solid hsl(355, 90%, 40%);
+    outline: none;
+}
