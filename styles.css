@@ -62,7 +62,7 @@ input {
 
 @media only screen and (min-width: 520px) {
     #content-container {
-        width: 488px;
+        width: 500px;
     }
 }
 
@@ -87,6 +87,10 @@ input {
     height: inherit;
     text-align: center;
     width: 67%;
+}
+
+input::placeholder {
+    color: hsl(135, 50%, 75%);
 }
 
 select {
@@ -137,7 +141,7 @@ main {
     display: flex;
     font-weight: bold;
     margin-top: 32px;
-    min-height: 100px;
+    min-height: 135px;
     padding: 1rem;
     width: 100%;
 }
@@ -178,6 +182,15 @@ li:last-of-type {
     width: 115px;
 }
 
+noscript {
+    background-color: hsl(355, 90%, 85%);
+    border: 2px solid hsl(355, 90%, 40%);
+    padding: 1rem;
+    width: inherit;
+    height: inherit;
+    font-weight: normal;
+}
+
 @media only screen and (min-width: 520px) {
     main {
         display: flex;
@@ -185,7 +198,7 @@ li:last-of-type {
     }
 
     .left-part {
-        width: 130px;
+        width: 140px;
     }
 }
 
@@ -206,4 +219,8 @@ li:last-of-type {
     background-color: hsl(355, 31%, 95%);
     border: 3px solid hsl(355, 90%, 40%);
     outline: none;
+}
+
+.invalid-input::placeholder {
+    color: hsl(355, 50%, 85%);
 }
