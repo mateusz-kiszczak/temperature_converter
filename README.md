@@ -2,7 +2,7 @@
 
 It converts the temperature between the six most common units. Inlcuded units: **Celsius**, **Fahrenheit**, **Newton**, **Kelvin**, **Rankine** and **Réaumur**. Choose the started quantity and check the results right below.
 
-![Temperature Converter App Screenshot](https://small-projects.s3.eu-west-2.amazonaws.com/temperature_converter/capture.jpg)
+![Temperature Converter App Screenshot](https://small-projects.s3.eu-west-2.amazonaws.com/temperatureConverter/capture.jpg))
 
 ---
 
@@ -34,7 +34,7 @@ It converts the temperature between the six most common units. Inlcuded units: *
 
 ## Live example
 
-[Temperature Converter LIVE](https://small-projects.s3.eu-west-2.amazonaws.com/temperature_converter/index.html)
+[Temperature Converter LIVE](https://small-projects.s3.eu-west-2.amazonaws.com/temperatureConverter/index.html)
 
 ---
 
